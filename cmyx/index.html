@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>催眠遊戯【心海汉化组】补丁发布</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    .page-wrapper {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #fefefe;
+      position: relative;
+    }
+
+    .page-wrapper {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background-color: transparent;
+      position: relative;
+    }
+
+    h1 {
+      margin-top: 40px;
+      margin-bottom: 0px;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-align: center;
+      background: linear-gradient(270deg, #be368b, #7457a0, #1f8bcd, #be368b);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      z-index: 2;
+    }
+
+    .background-wrapper {
+      width: 100%;
+      max-width: 1100px;
+      aspect-ratio: 1100 / 685;
+
+      position: relative;
+      overflow: hidden;
+
+      background-image: url('static/img/character.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .image-grid {
+      position: absolute;
+
+      top: 30%;
+      /* 原来 200px 改成比例 */
+      left: 5%;
+      right: 5%;
+      bottom: 5%;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2%;
+
+      padding: 0 3% 3%;
+      box-sizing: border-box;
+
+      justify-items: center;
+      align-items: center;
+    }
+
+    .character-image {
+      width: 80%;
+      max-width: 220px;
+    }
+
+    .character-image {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .download-button {
+      width: clamp(220px, 40%, 420px);
+      position: relative;
+      margin-top: 10px;
+      display: block;
+      margin: 20px auto 0;
+      text-align: center;
+      padding: 15px 40px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      text-decoration: none;
+      background: linear-gradient(270deg, #be368b, #7457a0, #1f8bcd, #be368b);
+      background-size: 600% 600%;
+      color: #fff;
+      border-radius: 10px;
+      animation: gradientShift 3s ease infinite;
+      transition: all 0.3s ease;
+      z-index: 2;
+    }
+
+    .download-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .disclaimer {
+      max-width: 900px;
+      margin: 0px auto 60px;
+
+      padding: 15px 20px;
+
+      font-size: 0.9rem;
+      line-height: 1.6;
+
+      color: #777;
+
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <h1>催眠遊戯【心海汉化组】补丁发布</h1>
+
+    <div class="background-wrapper">
+      <div class="image-grid">
+        <img src="static/img/char/沙流_中_制服（ブレザー／スカート／靴下／靴）_a_基本.png"
+          data-hover="static/img/char/沙流_中_制服（ブレザー／パンツ／靴下／上履き）_a_虚脱.png" data-hovercolor="#be368b" alt="Image 1"
+          class="character-image" style="background-color: #99f89f;">
+        <img src="static/img/char/蛍火_中_制服（ベスト／スカート）_b_真顔1.png" data-hover="static/img/char/蛍火_中_制服（ベスト／スカート）_a_虚脱.png"
+          data-hovercolor="#7457a0" alt="Image 2" class="character-image" style="background-color: #dceb64;">
+        <img src="static/img/char/舞夜_中_制服（ブレザー／スカート／靴下／上履き）_b_真顔2＠n.png"
+          data-hover="static/img/char/舞夜_中_制服（ブレザー／スカート／靴下／上履き）_a_虚脱＠n.png" data-hovercolor="#1f8bcd" alt="Image 3"
+          class="character-image" style="background-color: #fb84f4;">
+        <img src="static/img/char/流衣_中_スーツ1（上着／スカート／ストッキング／室内靴）_b_真顔1.png"
+          data-hover="static/img/char/流衣_中_スーツ1（上着／スカート／ストッキング／室内靴）_a_真顔.png" data-hovercolor="#1f8bcd" alt="Image 4"
+          class="character-image" style="background-color: #88ccd8;">
+        <img src="static/img/char/紫雲_中_制服（ブレザー／スカート／ストッキング／上履き）_a_基本.png"
+          data-hover="static/img/char/紫雲_中_制服（ブレザー／スカート／ストッキング／上履き）_a_半眼（ハイライトなし）.png" data-hovercolor="#be368b"
+          alt="Image 5" class="character-image" style="background-color: #98c3f7;">
+        <img src="static/img/char/汐見_中_制服（ブレザー／スカート／靴下／上履き）_a_表情基本.png"
+          data-hover="static/img/char/汐見_中_制服（ブレザー／スカート／靴下／上履き）_a_虚脱.png" data-hovercolor="#7457a0" alt="Image 6"
+          class="character-image" style="background-color: #f7cb98;">
+      </div>
+
+    </div>
+
+    <a href="#" class="download-button">敬请期待</a>
+    <div class="disclaimer">
+      <p>
+        禁止在服务器位于中国的各大平台转载或提及本项目。<br>
+        禁止以本项目直接或间接盈利。<br>
+        不鼓励转载。若需分享，请保留本发布页原始链接和【心海汉化组】。<br>
+        如有项目采用本项目提供的文本数据或相关内容，请注明来源（本发布页链接）和【心海汉化组】。
+      </p>
+    </div>
+  </div>
+
+
+
+  <script>
+    document.querySelectorAll('.image-grid img').forEach(img => {
+      const originalSrc = img.src;
+      const hoverSrc = img.dataset.hover;
+      const originalBg = img.style.backgroundColor;
+      const hoverBg = img.dataset.hovercolor || originalBg;
+
+      img.addEventListener('mouseenter', () => {
+        img.src = hoverSrc;
+        img.style.backgroundColor = hoverBg;
+      });
+
+      img.addEventListener('mouseleave', () => {
+        img.src = originalSrc;
+        img.style.backgroundColor = originalBg;
+      });
+    });
+  </script>
+</body>
+
+</html>
